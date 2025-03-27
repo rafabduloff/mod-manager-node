@@ -1,0 +1,231 @@
+/* public/modmanager.css */
+
+/* Базовые стили */
+body {
+    background: #f0f4f8;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-hover));
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Drop zone для архивов */
+.drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+.drop-zone.dragover {
+    background-color: #e0f7fa;
+}
+
+/* Форма импорта модов */
+#folderPicker {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#folderPicker:hover {
+    background-color: #e0f7fa;
+}
+#folderInput {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Кнопки */
+.btn-1 {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0.5rem 0;
+}
+.btn-1:hover {
+    background-color: #187bcd;
+}
+
+/* Стили для выпадающего списка сортировки */
+#sortContainer {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#sortContainer label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 0.5rem;
+}
+.sort-select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Очередь модов */
+.file-queue {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+#queueList {
+    margin: 0 auto;
+}
+
+/* Мод-контейнеры - одинаковая ширина */
+.mod-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+/* Изображения очереди */
+.queue-item-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+/* Информация очереди */
+.queue-item-info {
+    flex: 1;
+}
+.queue-item-name,
+.queue-item-weight {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Секция установленных модов */
+.mods-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.mod-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+.mod-item-info {
+    flex: 1;
+}
+.mod-item-name {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+.mod-item-weight,
+.mod-item-id,
+.mod-item-installedTime {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #777;
+}
+.mod-item-installedTime {
+    font-style: italic;
+}
+
+/* Действия модов */
+.mod-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 16px;
+}
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 16px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+input:checked + .slider {
+    background-color: #17a2b8;
+}
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+.mod-item-delete,
+.queue-item-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #dc3545;
+}

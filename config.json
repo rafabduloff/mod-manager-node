@@ -1,0 +1,11 @@
+{
+  "games": [
+    {
+      "id": "serioussamfusion",
+      "name": "Serious Sam Fusion",
+      "baseGamePath": "F:\\Games\\Serious Sam Fusion 2017 (beta)\\steamapps\\common\\Serious Sam Fusion 2017",
+      "modsFolder": "Content\\SeriousSam2017"
+    }
+  ],
+  "miscFolder": "misc"
+}

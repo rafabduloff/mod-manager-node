@@ -1,0 +1,64 @@
+{
+  "installedMods": [
+    {
+      "title": "Fish Gibbing [Replacement]",
+      "modIdentifier": "3381023613",
+      "weight": 2161510,
+      "groFile": "F:\\Games\\Serious Sam Fusion 2017 (beta)\\steamapps\\common\\Serious Sam Fusion 2017\\Content\\SeriousSam2017\\zz3381023613.gro",
+      "status": "enabled",
+      "installedAt": "2025-03-27T16:55:30.311Z",
+      "gameId": "serioussamfusion",
+      "icon": "/misc/zz3381023613.jpg"
+    },
+    {
+      "title": "Dark Souls Menu Styled",
+      "modIdentifier": "3447010634",
+      "weight": 9030622,
+      "groFile": "F:\\Games\\Serious Sam Fusion 2017 (beta)\\steamapps\\common\\Serious Sam Fusion 2017\\Content\\SeriousSam2017\\zz3447010634.gro",
+      "status": "enabled",
+      "installedAt": "2025-03-27T16:55:30.452Z",
+      "gameId": "serioussamfusion",
+      "icon": "/misc/zz3447010634.jpg"
+    },
+    {
+      "title": "Misty's Dreamlands: Bridlewood",
+      "modIdentifier": "3449128028",
+      "weight": 162678656,
+      "groFile": "F:\\Games\\Serious Sam Fusion 2017 (beta)\\steamapps\\common\\Serious Sam Fusion 2017\\Content\\SeriousSam2017\\zz3449128028.gro",
+      "status": "enabled",
+      "installedAt": "2025-03-27T16:55:34.210Z",
+      "gameId": "serioussamfusion",
+      "icon": "/misc/zz3449128028.jpg"
+    },
+    {
+      "title": "TFE Internal Test Prototype Music For Serious Sam HD",
+      "modIdentifier": "3450553939",
+      "weight": 16348978,
+      "groFile": "F:\\Games\\Serious Sam Fusion 2017 (beta)\\steamapps\\common\\Serious Sam Fusion 2017\\Content\\SeriousSam2017\\zz3450553939.gro",
+      "status": "enabled",
+      "installedAt": "2025-03-27T16:55:34.485Z",
+      "gameId": "serioussamfusion",
+      "icon": "/misc/zz3450553939.jpg"
+    },
+    {
+      "title": "Ahead Of Speed: The Stone Island",
+      "modIdentifier": "3450624210",
+      "weight": 29726837,
+      "groFile": "F:\\Games\\Serious Sam Fusion 2017 (beta)\\steamapps\\common\\Serious Sam Fusion 2017\\Content\\SeriousSam2017\\zz3450624210.gro",
+      "status": "enabled",
+      "installedAt": "2025-03-27T16:55:35.548Z",
+      "gameId": "serioussamfusion",
+      "icon": "/misc/zz3450624210.jpg"
+    },
+    {
+      "title": "Nether Fortress Survival",
+      "modIdentifier": "3450795747",
+      "weight": 49720267,
+      "groFile": "F:\\Games\\Serious Sam Fusion 2017 (beta)\\steamapps\\common\\Serious Sam Fusion 2017\\Content\\SeriousSam2017\\zz3450795747.gro",
+      "status": "enabled",
+      "installedAt": "2025-03-27T16:55:37.711Z",
+      "gameId": "serioussamfusion",
+      "icon": "/misc/zz3450795747.jpg"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Mod Manager - Настройки</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+<header>
+  <h1>Mod Manager - Настройки</h1>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="settings.html?game=serioussamfusion">Настройки</a>
+  </nav>
+</header>
+<main>
+  <h2>Настройки для игры</h2>
+  <form id="settingsForm">
+    <div class="form-group">
+      <label for="baseGamePathPicker">Путь к игре:</label>
+      <input type="file" id="baseGamePathPicker" webkitdirectory directory style="display: none;">
+      <div id="baseGamePathDisplay" class="file-picker">Нажмите, чтобы выбрать папку</div>
+    </div>
+    <button type="submit" class="btn-1">Сохранить настройки</button>
+  </form>
+  <div id="settingsStatus"></div>
+  <p class="info">Путь к папке модов задается в config.json</p>
+</main>
+<script src="settings.js"></script>
+</body>
+</html>

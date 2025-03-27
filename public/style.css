@@ -1,0 +1,141 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    background: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Drop zone */
+.drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.drop-zone.dragover {
+    background-color: #e0f7fa;
+}
+
+/* Очередь файлов (без рамок, только иконки) */
+.file-queue {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file-queue li {
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+/* Стили для установленных модов - вывод только иконок */
+.mods-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mods-list .mod-item {
+    margin: 0.5rem;
+    position: relative;
+}
+
+.mods-list .mod-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Элементы действий, наложенные на иконку */
+.mod-actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+/* Тумблер */
+.toggle-switch {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 16px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 16px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #17a2b8;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+/* Кнопка удаления */
+.btn-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #dc3545;
+}

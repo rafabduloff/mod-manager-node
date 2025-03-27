@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Mod Manager - Менеджер модов</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="modmanager.css">
+</head>
+<body>
+<header>
+  <h1>Mod Manager - Менеджер модов</h1>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="settings.html?game=564310">Настройки</a>
+  </nav>
+</header>
+<main>
+  <!-- Зона загрузки модов архивами -->
+  <section id="upload-section">
+    <h2>Загрузить моды (архив)</h2>
+    <div id="dropZone" class="drop-zone">
+      <p>Перетащите сюда ZIP архивы с модами или нажмите</p>
+      <input type="file" id="modZipInput" accept=".zip" multiple style="display: none;">
+    </div>
+    <ul id="fileQueue" class="file-queue"></ul>
+  </section>
+
+  <!-- Зона импорта модов из папки (ввод абсолютного пути) -->
+  <section id="import-section">
+    <h2>Импортировать моды из папки</h2>
+    <div id="folderPicker" class="file-picker">Введите абсолютный путь к папке с модами</div>
+    <input type="text" id="folderInput" placeholder="C:\WorkshopDL\steamcmd\steamapps\workshop\content\564310">
+    <button id="importFolderBtn" class="btn-1">Добавить моды из папки в очередь</button>
+    <div id="importStatus"></div>
+  </section>
+
+  <!-- Зона очереди модов -->
+  <section id="queue-section">
+    <h2>Очередь модов</h2>
+    <div id="sortContainer">
+      <label for="sortSelect">Сортировать по:</label>
+      <select id="sortSelect" class="sort-select">
+        <option value="name_asc">Имя (А-Я)</option>
+        <option value="name_desc">Имя (Я-А)</option>
+        <option value="time_asc">Время (раньше - позже)</option>
+        <option value="time_desc">Время (позже - раньше)</option>
+        <option value="weight_asc">Вес (меньше - больше)</option>
+        <option value="weight_desc">Вес (больше - меньше)</option>
+      </select>
+    </div>
+    <ul id="queueList" class="file-queue"></ul>
+    <button id="processQueueBtn" class="btn-1">Установить все моды из очереди</button>
+  </section>
+
+  <!-- Зона запуска игры -->
+  <section id="launch-section">
+    <h2>Запуск игры</h2>
+    <button id="launchModdedBtn" class="btn-1">Запустить модифицированную версию</button>
+    <button id="launchVanillaBtn" class="btn-1">Запустить ванильную версию</button>
+  </section>
+
+  <!-- Секция установленных модов -->
+  <section id="mods-list-section">
+    <h2>Установленные моды</h2>
+    <div id="modsList" class="mods-list"></div>
+  </section>
+</main>
+<script src="modmanager.js"></script>
+</body>
+</html>
